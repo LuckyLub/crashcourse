@@ -9,7 +9,7 @@ the file and prints what you wrote three times. Print the contents once by read-
 ing in the entire file, once by looping over the file object, and once by storing
 the lines in a list and then working with them outside the with block.'''
 
-file = "ProjectDocuments/learningpython.txt"
+file = "Documents/learningpython.txt"
 
 for i in range(3):
     print(open(file).read())
@@ -53,7 +53,7 @@ respond, write their name to a file called guest.txt.'''
 #
 # name = input("What is your name, dear madam or sir?")
 #
-# with open("ProjectDocuments/guest.txt", "w") as fin:
+# with open("Documents/guest.txt", "w") as fin:
 #     fin.write(name)
 
 '''10-4. Guest Book: Write a while loop that prompts users for their name. When
@@ -64,7 +64,7 @@ new line in the file.'''
 flag = True
 while flag:
 
-    with open("ProjectDocuments/guest_book.txt", "a") as fin:
+    with open("Documents/guest_book.txt", "a") as fin:
         name = input("What is your name, dear madam or sir? (type exit to exit)")
         if name.lower() == "exit":
             flag = False
@@ -80,7 +80,7 @@ that stores all the responses.'''
 # flag = True
 # while flag:
 #
-#     with open("ProjectDocuments/responses.txt", "a") as fin:
+#     with open("Documents/responses.txt", "a") as fin:
 #         reason = input("Why do you like programming? (type exit to exit)")
 #         if reason.lower() == "exit":
 #             flag = False
@@ -131,8 +131,8 @@ and print a friendly message if a file is missing. Move one of the files to a di
 ferent location on your system, and make sure the code in the except block
 executes properly.'''
 
-# file1 = "ProjectDocuments/cats.txt"
-# file2 = "ProjectDocuments/dogs.txt"
+# file1 = "Documents/cats.txt"
+# file2 = "Documents/dogs.txt"
 #
 # documents = []
 # documents.append(file1)
@@ -181,7 +181,7 @@ formatted.
 Write a program that reads the files you found at Project Gutenberg and
 determines how many times the word 'the' appears in each text.'''
 
-# oz = "ProjectDocuments/The Marvellous Land of Oz.txt"
+# oz = "Documents/The Marvellous Land of Oz.txt"
 #
 # with open(oz, 'r') as oz:
 #     print(oz.read().lower().count("the"))
@@ -207,10 +207,10 @@ number! It’s _____.”'''
 #
 #
 #
-# with open("ProjectDocuments/FavNums.txt", 'w') as favnum_file:
+# with open("Documents/FavNums.txt", 'w') as favnum_file:
 #     json.dump(user_num, favnum_file)
 #
-# with open("ProjectDocuments/FavNums.txt", 'r') as favnum_file:
+# with open("Documents/FavNums.txt", 'r') as favnum_file:
 #     loaded_nums = json.load(favnum_file)
 #
 # print(f'I know your favorite numbers. They are: {", ".join(str(num) for num in loaded_nums)}, and I will tell everyone. Muhahaha, you fool, '

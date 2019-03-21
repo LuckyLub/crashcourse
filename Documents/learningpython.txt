@@ -1,0 +1,6 @@
+In python you can create classes.
+In python you can create subclasses.
+In python you can make dictionaries.
+In python you can append to lists.
+In python you can import modules.
+In python you can define methods to your classes.

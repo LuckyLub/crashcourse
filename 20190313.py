@@ -3,7 +3,7 @@ import requests
 url = "https://medium.com/"
 result = requests.get(url)
 
-file_path = "ProjectDocuments/results.html"
+file_path = "Documents/results.html"
 
 with open(file_path, "w") as fin:
     fin.write(str(result.content))
